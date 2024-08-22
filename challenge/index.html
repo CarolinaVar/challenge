@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Desafío - Cifrador de Mensajes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="marca" src="imagenes /Marca.png" alt="Marca">
+        </div>    
+    </header>
+
+    <main>
+        <section class="izquierda">
+            <textarea class="entrada-mensaje" cols="30" rows="10" placeholder="Escriba el mensaje aquí" autofocus></textarea>
+            <div>
+                <h6 class="aviso">&#9888 Solo letras minúsculas sin tildes.</h6>
+            </div>
+            <div class="controles">
+                <button class="cifrar" onclick="cifrar()">Cifrar</button>
+                <button class="descifrar" onclick="descifrar()">Descifrar</button>
+            </div>
+        </section>
+
+        <section class="derecha">
+            <textarea class="salida-mensaje" cols="20" rows="10" disabled></textarea>            
+            <div class="mensaje-dinamico">
+                <h2 class="mensaje-vacio">No se encontró ningún mensaje</h2>   
+                <h3 class="instruccion">Escriba el mensaje que desea cifrar o descifrar.</h3>
+                <button class="copiar" onclick="copiar()" style="display: none;"><span class="alerta"></span>Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="pie-pagina">Estudiante Carolina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

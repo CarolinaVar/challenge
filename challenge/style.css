@@ -1,0 +1,157 @@
+* {
+    background: #E5E5E5;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.marca {
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 8%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+.entrada-mensaje {
+    resize: none;
+    margin-top: 90px;
+    color: darkblue;
+    border: none;
+    width: 300px;
+}
+
+.entrada-mensaje::placeholder {
+    color: darkblue;
+}
+
+.entrada-mensaje:focus {
+    outline: none;
+}
+
+.salida-mensaje {
+    resize: none;
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: darkblue;
+    background: white;
+    background-image: url("imagenes /Personaje.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 300px;
+}
+
+.salida-mensaje:focus {
+    outline: none;
+}
+
+.aviso {
+    color: grey;
+    font-size: 16px;
+}
+
+.controles {
+    display: flex;
+    margin-top: 18px;
+}
+
+.cifrar {
+    color: #D8DFE8;
+    background: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.descifrar {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.mensaje-dinamico {
+    background: transparent;
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+.mensaje-vacio {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+
+.instruccion {
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+
+.copiar {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+
+.cifrar:hover, .descifrar:hover, .copiar:hover {
+    background: #555;
+    color: white;
+}
+
+.alerta {
+    display: none;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 100px;
+    margin-left: -75px;
+    opacity: .6;
+}
+
+footer {
+    text-align: center;
+    background-color: darkblue;
+    padding: 15px;
+}
+
+.pie-pagina {
+    color: #D8DFE8;
+    background: transparent;
+    font-size: 15px;
+    margin: 10px;
+}
